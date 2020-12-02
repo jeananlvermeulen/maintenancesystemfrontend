@@ -1,0 +1,74 @@
+<div class="container-fluid main_container" style=" background-image: url('./assets/img/backgound.jpg');">
+<br>
+<br>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+          <img src="http://placehold.it/150x50?text=Logo" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <br><br><br>
+  <div class="haut">
+    <h3 style="display:inline-block;">List Of Technicians</h3>
+    <button type="button" class="float-right btn btn-success" (click)="goToAddMaintenance()" style="margin-bottom:30px; display:inline-block;">Add new technician</button>
+  </div>
+  <table class="table table-striped" style="background-color:white">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Cell Number</th>
+        <th>Profession</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let maintenance of maintenances" >
+        <td>{{maintenance.name}}</td>
+        <td>{{maintenance.lastname}}</td>
+        <td>{{maintenance.emailm}}</td>
+        <td>{{maintenance.gender}}</td>
+        <td>{{maintenance.phonenumber}}</td>
+        <td>{{maintenance.profession}}</td>
+        <td>
+          <button type="button" class="btn btn-primary" (click)="goToEditMaintenance(maintenance.maintenanceId)">Edit</button>&nbsp;&nbsp;
+          <button type="button" class="btn btn-info" (click)="goToViewMaintenance(maintenance.maintenanceId)">View</button>&nbsp;&nbsp;
+          <button type="button" class="btn btn-danger" (click)="deleteMaintenance(maintenance.maintenanceId)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>

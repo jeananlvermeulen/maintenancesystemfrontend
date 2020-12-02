@@ -1,0 +1,69 @@
+<div class="container-fluid main_container" style=" background-image: url('./assets/img/backgound.jpg');">
+<br>
+<br>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+          <img src="http://placehold.it/150x50?text=Logo" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" (click)="gotolist()">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+  <table class="table table-striped" style="background-color:white">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Cell Number</th>
+        <th>Profession</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{maintenance.name}}</td>
+        <td>{{maintenance.lastname}}</td>
+        <td>{{maintenance.emailm}}</td>
+        <td>{{maintenance.gender}}</td>
+        <td>{{maintenance.phonenumber}}</td>
+        <td>{{maintenance.profession}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-primary"(click)="gotolist()">Back</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
