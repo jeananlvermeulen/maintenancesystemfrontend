@@ -1,7 +1,10 @@
-<div style="min-width:100%; min-height:200%; background-image: url)('../assets/img/merci.jpeg');">
+<div style="min-width:100%; min-height:200%; background-image: url('./assets/img/backgound.jpg');">
+
   <br><br>
-  <div class="container" style="max-width:600px; background-color:white;">
+  <div class="container" style="max-width:500px; background-color:#DCDCDC;">
+    <br>
     <h2 class="textual">User registration</h2>
+    <br>
     <form #registerForm="ngForm"(ngSubmit)="registerUser()">
       <!-- <small [class.text-danger]="msg.status==500">{{msg.message}}</small> -->
       <small class="text-danger">{{msg}}</small>
@@ -52,9 +55,12 @@
 
       <button [disabled]="registerForm.form.invalid" type="submit" class="btn btn-info">Register</button>
 
-      <small class ="float-right btextual" (click)="gotologin()"> Existing user ? Login here</small>
+      <a class ="float-right btextual" (click)="gotologin()" style="cursor:pointer;"> Existing user ? Login here</a>
     </form>
     <br>
-    <br>
   </div>
+  <br>
+  <br>
+  <br>
+
 </div>

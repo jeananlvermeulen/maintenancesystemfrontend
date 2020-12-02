@@ -1,6 +1,8 @@
-<div style="min-width:100%; min-height:200%; background-image: url)('../assets/img/merci.jpeg');">
+<div style="min-width:100%; min-height:200%; max-width:100%; background-image: url('./assets/img/backgound.jpg');">
   <br><br>
-<div class="container" style="max-width:600px; background-color:white;">
+<div class="container" style="max-width:600px; background-color:#DCDCDC;">
+  <br>
+  
   <h2 class="textual" style="text-align:center;">User Login</h2>
   <form  #loginform="ngForm" (ngSubmit)="loginUser()">
     <small class="text-danger">{{msg}}</small>
@@ -23,7 +25,17 @@
       <label><input type="checkbox" name="remember"> Remember me</label>
     </div>
     <button [disabled]="loginform.form.invalid" type="submit" class="btn btn-info">Login</button>
-    <small class="float-right" (click)="gotoregistration()">New user ? Register here</small>
+    <a class="float-right" (click)="gotoregistration()" style="cursor:pointer;">New user ? Register here</a>
+    <br>
+    <br>
   </form>
  </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
 </div>

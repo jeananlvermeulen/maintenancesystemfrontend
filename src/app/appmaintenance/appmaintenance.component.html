@@ -1,7 +1,39 @@
-<div style="min-width:100%; min-height:200%; background-image: url)('../assets/img/merci.jpeg');">
+<div class="container-fluid main_container" style=" background-image: url('./assets/img/backgound.jpg');">
+  <br>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+          <img src="http://placehold.it/150x50?text=Logo" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
   <br><br>
-    <div class="container">
-      <h3>Add Technicians</h3>
+    <div  class="container" style="max-width:600px; background-color:#DCDCDC;">
+      <br>
+      <h3 style="text-align:center;">Add Technicians</h3>
+      <br>
       <form #addmaintenanceform="ngForm" (ngSubmit)="addmaintenanceformsubmit()">
         <!-- {{maintenance | json}} -->
         <div class="form-group">
@@ -29,7 +61,7 @@
           <input type="text" class="form-control" required [(ngModel)]="maintenance.profession" name="profession">
         </div>
 
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-success">Submit</button>&nbsp;&nbsp;
         <button type="button" class="btn btn-primary"(click)="gotolist()">Back</button>
       </form>
     </div>
